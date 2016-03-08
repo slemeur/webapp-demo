@@ -1,4 +1,4 @@
-# web-spring-java-simple
+# webapp-demo
 
 
 # how to run
