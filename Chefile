@@ -1,0 +1,13 @@
+workspace.runtime.docker.image="florentbenoit/ubuntu_jdk8"
+workspace.commands[0].type="custom"
+workspace.commands[0].name="build and run"
+workspace.commands[0].commandLine="mvn -f /projects/webapp-demo clean install && cp /projects/webapp-demo/target/*.war $TOMCAT_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh run"
+workspace.commands[0].attributes.previewUrl="http://${server.port.8080}"
+workspace.commands[1].type="custom" 
+workspace.commands[1].name="debug"
+workspace.commands[1].commandLine="mvn -f /projects/webapp-demo clean install && cp /projects/webapp-demo/target/*.war $TOMCAT_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh jpda run"
+workspace.commands[1].attributes.previewUrl="http://${server.port.8080}"
+
+workspace.projects[0].type="maven"
+workspace.name="local"
+workspace.ram=2048
