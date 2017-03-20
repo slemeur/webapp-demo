@@ -1,6 +1,6 @@
 # webapp-demo
 
 
-# how to run
+# how to start workspace
 
-mvn tomcat7:run
+docker run eclipse/che dir up
