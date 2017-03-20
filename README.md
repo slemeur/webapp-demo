@@ -3,4 +3,6 @@
 
 # how to start workspace
 
-docker run eclipse/che dir up
+```
+$ docker run eclipse/che dir up
+```
